@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<title>BRANDISE-Build Your Brand's Success</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+  p {text-align: left;}
+
+  .topnav {
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+
+
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      display: none;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+  }
+</style>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+<body
+  style="font-family:JOKER; background-color: black; margin: 0;background-image: linear-gradient(180deg,#023192, rgb(255, 255, 255));color: rgb(0, 0, 0);">
+  <!-- Right-sided navbar links. Hide them on small screens -->
+  <div class="gs-top">
+    <div class="gs-bar gs-padding gs-card"
+      style="font-family:JOKER;letter-spacing:4px;color:rgb(255, 255, 255);  backdrop-filter: blur(8px);">
+
+      <a href="#home">
+        <div class="gs-left">
+          <h3><strong>BRANDISE</strong></h3>
+        </div>
+      </a>
+
+      <div class="topnav gs-right" id="myTopnav">
+        <a href="#process">PROCESS</a>
+        <a href="#product">OUR PRODUCT</a>
+        <a href="#work">WHAT WE DO</a>
+        <a href="#about">ABOUT US</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="gs-display-container gs-content gs-wide" style="max-width:1600px;min-width:500px" id="home">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/what-we-do-1.png" width=100% height="500">
+
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/what-we-do-1.png" width=100% height="500">
+
+      </div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!-------------------------------------------------------------------------------------------->
+
+    <!--</header>-->
+
+    <!-- Page content -->
+    <div class="gs-display-container gs-card gs-center">
+      <!--  Section -->
+      <div class="gs-row-padding" id="about">
+        <div class="gs-col l3 gs-padding gs-display-container gs-left">
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1687709382573!6m8!1m7!1sCAoSLEFGMVFpcE1fQlNwVEZ3M2FiVlhQemxYcFJDSFpWTVhaekxmdDhOQ3VKVGdw!2m2!1d23.17116809!2d75.79683691!3f313.44!4f1.696699927193336!5f0.4000000000000002" width="500px" height="450" style="border: 5px;;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- <img src="images/about.jpg" class="gs-image" alt="About Us" width="400" height="750"><br> -->
+        </div>
+
+        <div class="gs-right gs-col l7 gs-padding-large gs-bar gs-wide">
+          <h2 style="color: white;">ABOUT US</h1><br>
+            <p class="gs-medium" style="color: white;"> Welcome to Brandise., </p>
+            <p class="gs-small" style="color: white;"> One of the highly acclaimed Google Trusted
+              agencies across India.</p>
+            <p class="gs-small" style="color: white;">We are proud of the wide range of tailor-made
+              services that we provide to businesses, thus potentially
+              contributing to their growth and success. We help businesses to be
+              rediscovered and seen online, thus resulting in encouraging more
+              customers through their doors.</p>
+            <p class="gs-small" style="color: white;">In today's digital era, it is a must to ensure
+              that your business is noticed online by your potential customers.
+              Keeping in mind the growing needs of the local businesses to be
+              found online, we are providing this service. We are now
+              successfully providing personalized services to all our clients -
+              be it larger companies, national chains or small businesses.</p>
+            <p class="gs-small" style="color: white;">Our team of business experts and Google Trusted
+              photographers are currently operating across the country and as
+              our services are valued by our clients, we are growing every day.</p>
+            <p class="gs-small" style="color: white;">Being our client, you can be rest assured that
+              your business is absolutely in safe and very capable hands, while
+              you enjoy a remarkable online presence.</p>
+        </div>
+      </div>
+
+      <!--  Section -->
+      <div class="gs-row-padding" id="work" style="background-origin: padding-box; background-color: white;">
+        <div class="gs-col l8 gs-padding ">
+          <h2 style="color: #023192;">WHAT WE DO</h2>
+          <p style="color: #023192;">BRANDISE aims to make online presence
+            easier for local businesses in India. </p>
+          <p style="color: #023192;">We provide a comprehensive world-class
+            360-degree virtual tour that makes your business more searchable,
+            findable and clickable online and extremely profitable offline.
+            Our high-class virtual tours allow your customers to step from
+            their laptop or mobile browser right through your front door all
+            from the comfort of their couch.</p>
+          <p style="color: #023192;">With more than 100 business associates
+            and an expert team of photographers working directly with
+            businesses of all sizes across the country. This helps us to be
+            committed to create the absolutely best online presence, thus
+            succeeding in today's vast virtual marketplace. </p>
+        </div>
+        <div class="gs-col l3 gs-right">
+          <img src="images/about.jpg" class="gs-image" alt="About Us"><br>
+        </div>
+
+      </div>
+
+      <!--  Section -->
+      <div class="gs-row-padding gs-padding-32 gs-center gs-card" id="product" style="background-origin: padding-box;">
+        <div>
+          <h2 style="color: white; "><b>WHY VIRTUAL TOUR IS IMPORTANT FOR YOUR BUSINESS</b></h2>
+
+          <div class="gs-col l4 m6 gs-image gs-padding-32">
+            <img src="images/Get-Discovered.jpg" class="gs-image" alt="About Us" width="400" height="750"><br>
+            <h3 style="color: white;">GET DISCOVERED</h3>
+          </div>
+
+          <div class="gs-col l4 m6 gs-image gs-padding-32">
+            <img src="images/Boost-Customer-Footfall.png" class="gs-image" alt="About Us" width="400" height="750"><br>
+            <h3 style="color: white;">BOOST CUSTOMER FOOTFALL</h3>
+          </div>
+
+          <div class="gs-col l4 m6 gs-image gs-padding-32">
+            <img src="images/Cost-effective.png" class="gs-image" alt="About Us" width="400" height="750"><br>
+            <h3 style="color: white;">COST EFFECTIVE</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!--  Section -->
+      <div class="gs-row-padding gs-padding-32 gs-center gs-card" id="process"
+        style="background-origin: padding-box; background-color: #fbf8f8fe;">
+        <div>
+
+          <img src="images/Process.jpg" class="gs-image gs-wide" alt="About Us" width=100% height=auto><br>
+
+        </div>
+
+      </div>
+      <!-- End page content -->
+
+    </div>
+    <!-- Footer -->
+    <footer class="gs-center gs-padding-32 gs-bar">
+      <h1 class="gs-xxlarge" style="color:#023192;">BRANDISE-Build Your Brand's Success</h1>
+    </footer>
+
+</body>
+
+</html>
